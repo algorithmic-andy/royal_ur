@@ -165,6 +165,10 @@ Self-play is particularly interesting in this setting because it removes the nee
 
 Agents can generate their own experience while simultaneously adapting to the strategies produced by other agents.
 
+Agents decide moves by combining statistical information produced by an offensive coach, a defensive coach, and a narrator.
+
+Agents do not know specifics of the game played but instead how to trace efficient trajectories through the solution space by an incomplete collection of independent information.
+
 This creates a potentially open-ended process:
 
 $$
@@ -221,18 +225,7 @@ Possible measurements include:
 * Sensitivity to environment parameters
 * Policy similarity across environments
 * Robustness to rule perturbations
-
-A useful quantity for cross-environment experiments could be a transfer matrix:
-
-$$
-T_{ij}
-=
-\text{performance on }E_j
-\text{ after training on }E_i.
-$$
-
-This would allow the environments themselves to be studied as a network of transferable strategies.
-
+  
 ---
 
 ## Longer-Term Direction
@@ -276,7 +269,8 @@ The immediate objective is to implement a minimal Royal Ur environment, establis
 ### Phase 1 — Royal Ur
 
 * Implement a reproducible Royal Ur environment.
-* Train agents through self-play.
+* Train coaches and narrator through spectated self-play.
+* Train agents through standard self-play with shaped reward.
 * Establish baseline learning curves.
 * Create controlled rule variants.
 * Measure transfer between variants.
@@ -337,7 +331,7 @@ The structure may change as the experimental framework becomes clearer.
 
 ## Research Note
 
-A one-page research note describing the motivation and proposed framework is included in the repository:
+A research note describing the motivation and proposed framework is included in the repository:
 
 **Beyond Self-Play: Learning Across a Space of Computational Environments**
 
