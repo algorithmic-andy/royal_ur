@@ -26,7 +26,7 @@ Can self-play reinforcement learning produce strategies that generalize across a
 
 More specifically:
 
-* Does structured environmental variation encourage more general strategies?
+* Does decomposition of reward information improve model performance?
 * How much environmental diversity is useful before it becomes disruptive?
 * Can agents transfer knowledge to previously unseen environments?
 * Which properties of an environment determine whether learned strategies transfer?
@@ -42,7 +42,6 @@ Potential environment parameters include:
 
 * Board geometry
 * Board size
-* Number and location of safe squares
 * Number and location of rosettes
 * Rosette effects
 * Movement rules
@@ -50,8 +49,7 @@ Potential environment parameters include:
 * Capture rules
 * Number of pieces
 * Dice distribution
-* Turn structure
-* Winning conditions
+* Opponent strategy
 
 This creates a potentially large space of related environments:
 
