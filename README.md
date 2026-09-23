@@ -57,7 +57,7 @@ $$
 E_\theta,\qquad \theta \in \Theta
 $$
 
-where each value of \(\theta\) defines a particular computational environment.
+where each value of ($\theta\$) defines a particular computational environment.
 
 The agent is therefore not necessarily learning one game. It is learning within a **distribution of games**.
 
@@ -69,11 +69,10 @@ A simple progression could compare increasingly broad forms of training.
 
 | Training                   | Evaluation         | Question                                                     |
 | -------------------------- | ------------------ | ------------------------------------------------------------ |
-| \(E_1\)                    | \(E_1\)            | Can agents learn the environment?                            |
-| \(E_1\)                    | \(E_2\)            | Does a strategy transfer to a related environment?           |
-| \(E_1,\ldots,E_k\)         | Seen environments  | Does environmental diversity affect learning?                |
-| \(E_1,\ldots,E_k\)         | Unseen \(E_{k+1}\) | Can agents generalize to new environments?                   |
-| \(E_\theta\sim P(\theta)\) | New \(E_\theta\)   | Does training over a distribution produce robust strategies? |
+| ($E_1$)                    | ($E_1$)            | Can agents learn the environment?                            |
+| ($E_1$)                    | ($E_2$)            | Does a strategy transfer to a related environment?           |
+| ($E_1,\ldots,E_k$)         | Seen environments  | Does environmental diversity affect learning?                |
+| ($E_1,\ldots,E_k$)         | Unseen ($E_{k+1}$) | Can agents generalize to new environments?                   |
 
 The goal is not simply to maximize performance in one game, but to study the relationship between:
 
