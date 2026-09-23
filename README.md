@@ -1,5 +1,3 @@
-# royal_ur
-
 # Royal Ur: Self-Play Across Computational Environments
 
 > **Preliminary research direction**
